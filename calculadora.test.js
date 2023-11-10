@@ -13,8 +13,8 @@ describe('Teste da função somar', () => {
 
 describe('Teste da função subtrair', () => {
     test('Deveria subtrair dois numeros inteiros', () => {
-        expect(subtrair(5,3),toBe(2))
-        expect(subtrair(3,2),toBe(1))
-        expect(subtrair(8,3),toBe(5))
+        expect(subtrair(5,3).toBe(2))
+        expect(subtrair(3,2).toBe(1))
+        expect(subtrair(8,3).toBe(5))
     })
 })
