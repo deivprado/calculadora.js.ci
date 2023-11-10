@@ -1,4 +1,4 @@
-const { somar } = require('./calculadora')
+const {somar, subtrair } = require('./calculadora')
 
 describe('Teste da função somar', () => {
     test('Deveria somar 2 numeros inteiros positivos', () => {
@@ -8,5 +8,13 @@ describe('Teste da função somar', () => {
     })
     test('Deveria somar 2 numeros inteiros negativos', () => {
         expect(somar(-1,-1)).toBe(-2)
+    })
+})
+
+describe('Teste da função subtrair', () => {
+    test('Deveria subtrair dois numeros inteiros', () => {
+        expect(subtrair(5,3),toBe(2))
+        expect(subtrair(3,2),toBe(1))
+        expect(subtrair(8,3),toBe(5))
     })
 })
